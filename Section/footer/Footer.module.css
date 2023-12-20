@@ -1,0 +1,30 @@
+.footerBox{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerBox > p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(234, 234, 234);;
+}
+
+.footerBox >p > span{
+    color: rgb(42, 157, 143);
+    margin: 0px 0.5rem -1rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+    
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  
+}
+@media screen and (max-width: 640px) {
+  
+}
