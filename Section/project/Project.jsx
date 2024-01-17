@@ -5,6 +5,9 @@ import razorPay from "../../assets/project1.png";
 import { FaPlay, FaCode } from "react-icons/fa";
 import eComm from "../../assets/project2.png"
 import weather from "../../assets/project3.png"
+import toggleHead from "../../assets/project5.png"
+import fitClub from "../../assets/project6.png"
+import topCourses from "../../assets/project4.png"
 
 
 const Project = () => {
@@ -15,7 +18,7 @@ const Project = () => {
         <ProjectCard
           title="RazorPay Clone"
           projectImg={razorPay}
-          projectDetails="I have made this Razorpay clone using HTML And Tailwind CSS it is a online payment app. it is responsive also"
+          projectDetails="Designed and implemented a feature-rich landing page for a Razorpay clone using HTML and Tailwind CSS. This online payment app emphasizes a seamless user experience and responsiveness"
           langauge="HTML Tailwind css"
           href1={`https://razorpay-clone-tailwind1.netlify.app/`}
           href2={`https://github.com/magupta1/RazorpayClone-with-Tailwind`}
@@ -25,7 +28,7 @@ const Project = () => {
         <ProjectCard
           title="WEE Store"
           projectImg={eComm}
-          projectDetails="I have made this E-Commerce Website using HTML5 and CSS it's only home page and it's a Mobile and Tab Responsive Website also"
+          projectDetails="Developed a visually compelling and responsive E-Commerce website home page using HTML5 and CSS. Prioritized user experience for both mobile and tablet devices, ensuring seamless"
           langauge="HTML and CSS"
           href1={`https://magupta1.github.io/E-Commerce/`}
           href2={`https://github.com/magupta1/E-Commerce`}
@@ -35,10 +38,40 @@ const Project = () => {
         <ProjectCard
           title="Weather App"
           projectImg={weather}
-          projectDetails="I have made this weather app using open weather API and also HTML5, CSS, and JavaScript in this app you can  search weather data by City name"
+          projectDetails="Developed a sleek Weather App using OpenWeather API, HTML5, CSS, and JavaScript. Enables users to effortlessly search and access real-time weather data by city name."
           langauge="HTML, css and JavaScript"
           href1={`https://weather-app-api-mukesh.netlify.app/`}
           href2={`https://github.com/magupta1/Masai_Js_Problems/tree/main/WeatherApp2`}
+          icon1={<FaPlay />}
+          icon2={<FaCode />}
+        />
+        <ProjectCard
+          title="ToggleHead Project"
+          projectImg={toggleHead}
+          projectDetails="Made a cool landing page for digital marketing called ToggleHead. Used React.js, CSS, and Swipe.js for swiping stuff. Works great on phones and tablets too. It shows off my skills in React.js."
+          langauge="React.js, CSS, Swiper.js"
+          href1={`https://togglehead-project.netlify.app/`}
+          href2={`https://github.com/magupta1/ToggleHead-Project`}
+          icon1={<FaPlay />}
+          icon2={<FaCode />}
+        />
+        <ProjectCard
+          title="FitClup App"
+          projectImg={fitClub}
+          projectDetails="Crafted a sleek landing page for Fit Club using React.js and CSS3. Emphasized clean design, responsiveness, and subtle animations/images. Showcases a blend of technical proficiency and creative design."
+          langauge="React.js, css and animation"
+          href1={`https://fit-club-react-project.netlify.app/`}
+          href2={`https://github.com/magupta1/FitClub`}
+          icon1={<FaPlay />}
+          icon2={<FaCode />}
+        />
+        <ProjectCard
+          title="TopCourses App"
+          projectImg={topCourses}
+          projectDetails="Developed a React.js project Top Courses showcasing a collection of courses. Implemented category-based filtering for easy navigation. Designed with CSS to provide a user-friendly and responsive experience."
+          langauge="React.js and CSS"
+          href1={`https://topcourseswithfilter.netlify.app/`}
+          href2={`https://github.com/magupta1/top-Courses`}
           icon1={<FaPlay />}
           icon2={<FaCode />}
         />

@@ -11,8 +11,8 @@ const Navbar = () => {
   }
 
   return (
-    <div>
-      <div className={styles.nabarContainer}>
+    <>
+      <div className={styles.navBarContainer}>
         <h1>Mukesh Kumar</h1>
         <div className={menuBar ? styles.navListfterClick : styles.navlist}>
           <ul>
@@ -45,7 +45,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 
-.nabarContainer {
+.navBarContainer {
+    width: 100%;
     background-color: #16b5a2b4;
     padding: 0.8rem 7rem;
     color: aliceblue;
@@ -9,7 +10,7 @@
     align-items: center;
 }
 
-.nabarContainer>h1 {
+.navBarContainer>h1 {
     font-family: 'Whisper', cursive;
     font-size: 2rem;
 }
@@ -47,7 +48,7 @@
     left: 0px;
 }
 
-.hamburgur{
+.hamburgur {
     display: none;
 }
 
@@ -69,9 +70,9 @@
     top: 0;
     left: 0;
     background-color: #080606f0;
-    margin-top: 5rem;
-    width: 60%;
-    height: 60vh;
+    margin-top: 4rem;
+    width: 80%;
+    height: 100vh;
     z-index: 1111;
     transition: 0.5s ease-in-out;
     border-top-right-radius: 2rem;
@@ -104,33 +105,37 @@
 
 
 @media screen and (max-width: 1024px) {
-    .nabarContainer {
+    .navBarContainer {
         padding: 0.8rem 4rem;
     }
 }
 
 
 @media screen and (max-width: 768px) {
-    .nabarContainer {
+    .navBarContainer {
         padding: 0.6rem 2rem;
     }
-    .nabarContainer>h1 {
+
+    .navBarContainer>h1 {
         font-size: 1.8rem;
     }
 }
 
 
 @media screen and (max-width: 600px) {
-    .nabarContainer {
+    .navBarContainer {
         padding: 0.8rem 1rem;
     }
+
     .hamburgur {
         display: block;
     }
-    .navlist{
+
+    .navlist {
         display: none;
     }
-    .nabarContainer>h1 {
+
+    .navBarContainer>h1 {
         font-size: 1rem;
     }
 }

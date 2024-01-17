@@ -1,21 +1,12 @@
 .homeContainer {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: relative;
-}
-
-.homeLeft {
-    width: 35%;
-    height: 100%;
-    background-color: #2a9d8f;
 }
 
 .hero_img {
     position: absolute;
-    top: 30%;
+    top: 10%;
     left: 35%;
     width: 400px;
     height: 400px;
@@ -25,7 +16,7 @@
     z-index: 111;
 }
 
-.links {
+ .links {
     position: absolute;
     top: 87%;
     left: 5%;
@@ -45,13 +36,26 @@
 .links>a:hover {
     cursor: pointer;
     transform: scale(1.15);
+} 
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+ .homeLeft {
+    width: 35%;
+    height: 100%;
+    background-color: #2a9d8f;
+    position: relative;
 }
 
-.homeRight {
+ .homeRight {
     display: flex;
     flex-direction: column;
     align-items: start;
     row-gap: 0.5rem;
+    position: relative;
     width: 35%;
     padding-right: 5rem;
     margin-right: 3rem;
@@ -105,12 +109,12 @@ hr {
     height: 6px;
     margin: 4rem auto;
     border-radius: 5px;
-}
+} 
 
 
 @media screen and (max-width: 1024px) {
     .hero_img {
-        top: 15%;
+        top: 25%;
         left: 30%;
         width: 350px;
         height: 350px;
@@ -119,6 +123,10 @@ hr {
         width: 40%;
         padding-right: 2.5rem;
         margin-right: 2rem;
+    }
+    .links {
+        top: 95%;
+        left: 5%;
     }
 }
 
@@ -189,4 +197,4 @@ hr {
     fill: #2a9d8f;
 }
 
-}
+} 

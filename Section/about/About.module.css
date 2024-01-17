@@ -1,6 +1,6 @@
 .about_container {
-    width: 100vw;
-    margin: auto;
+    width: 100%;
+    margin: 6rem auto;
     display: flex;
     justify-content: space-around;
 }

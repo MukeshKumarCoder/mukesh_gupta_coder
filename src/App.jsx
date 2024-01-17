@@ -8,10 +8,11 @@ import Contact from "../Section/contact/Contact";
 import Footer from "../Section/footer/Footer";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import "./App.css"
 
 function App() {
   return (
-    <div style={{overflow:"hidden"}}>
+    <div className="appContainer">
      <Navbar />
       <Home id="home" />
       <About id="about"/>
