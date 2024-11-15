@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+
+.navBarContainer {
+    width: 100%;
+    background-color: #16b5a3;
+    padding: 0.8rem 7rem;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.navLeft>h1 {
+    font-family: 'Whisper', cursive;
+    font-size: 2rem;
+}
+
+.navRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.navRight>div>.navList {
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navRight>div>.navList::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1.5px;
+    background: aliceblue;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.navRight>div>.navList:hover:after{
+    width: 100%;
+}
+
+
+
+/*
+.navRight>ul>a>li {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in;
+}
+
+.navRight>ul>a>li:hover {
+    color: #0a0a0a;
+}
+
+.navRight>ul>a>li:hover::after {
+    content: "";
+    width: 80%;
+    height: 2px;
+    background-color: #0a0a0a;
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+}
+
+.hamburgur {
+    display: none;
+}
+
+.hamburgur button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    font-weight: bold;
+    width: 5rem;
+    background: transparent;
+    border: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.navListfterClick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #080606f0;
+    margin-top: 4rem;
+    width: 80%;
+    height: 100vh;
+    z-index: 1111;
+    transition: 0.5s ease-in-out;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.navListfterClick>ul>a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navListfterClick>ul>a>li {
+    list-style: none;
+    color: #2a9d8f;
+    border: 2px solid #2a9d8f;
+    padding: 0.4rem 1.5rem;
+    border-radius: 1.3rem;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    font-weight: 800;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .navBarContainer {
+        padding: 0.8rem 4rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .navBarContainer {
+        padding: 0.6rem 2rem;
+    }
+
+    .navBarContainer>h1 {
+        font-size: 1.8rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .navBarContainer {
+        padding: 0.8rem 1rem;
+    }
+
+    .hamburgur {
+        display: block;
+    }
+
+    .navlist {
+        display: none;
+    }
+
+    .navBarContainer>h1 {
+        font-size: 1rem;
+    }
+} */

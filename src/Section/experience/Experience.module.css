@@ -1,0 +1,27 @@
+.experienceContainer {
+    width: 90%;
+    background: #16b5a3;
+    box-shadow: 4px 4px 8px rgba(36, 3, 3, .2);
+    color: aliceblue;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+ .comapnyNav, .companyList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.companyList> p {
+   font-size: 1rem;
+  text-align: center;
+}
