@@ -92,7 +92,7 @@
     font-weight: bold;
 }
 
-.navListfterClick {
+.navListAfterClick {
     position: absolute;
     top: 0;
     left: 0;
@@ -109,14 +109,14 @@
     padding-top: 2rem;
 }
 
-.navListfterClick>ul>a {
+.navListAfterClick>ul>a {
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.navListfterClick>ul>a>li {
+.navListAfterClick>ul>a>li {
     list-style: none;
     color: #2a9d8f;
     border: 2px solid #2a9d8f;

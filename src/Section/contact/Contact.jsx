@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
 import { FiSend } from "react-icons/fi";
@@ -63,16 +63,6 @@ const Contact = () => {
                 name="email"
               />
             </div>
-            {/* <div className={styles.inputBox}>
-              <label htmlFor="number">Number</label>
-              <input
-                required
-                type="number"
-                placeholder="XXXX-XXX-XXX"
-                id="number"
-                name="number"
-              />
-            </div> */}
             <div className={styles.inputBox}>
               <label htmlFor="message">Message</label>
               <textarea

@@ -12,16 +12,12 @@
     gap: 1rem;
 }
 
- .comapnyNav, .companyList {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: bold;
+ table {
+    border-collapse: collapse;
 }
 
-
-.companyList> p {
-   font-size: 1rem;
-  text-align: center;
+th, td {
+    border-bottom: 1px solid #fff;
+    padding: 0.5rem;
+    text-align: center;
 }

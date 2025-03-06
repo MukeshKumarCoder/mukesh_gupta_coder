@@ -11,14 +11,14 @@ const About = () => {
           Mukesh Kumar | Full Stack (MERN) Developer
         </p>
         <p>
-          Dedicated Full Stack Developer with a lifelong passion for technology.
-          I pursued Full Stack Development at Masai School, gaining expertise in
-          the MERN stack — MongoDB, Express, React, and Node.js. Skilled in
-          building scalable web applications, I create RESTful APIs, responsive
-          interfaces, and secure back-end solutions. With experience in OAuth,
-          JWT authentication, and database optimization, I’m focused on crafting
-          innovative, user-centered applications while continually expanding my
-          technical skills.
+          I am a dedicated Full Stack Developer with a lifelong passion for
+          technology. I studied Full Stack Development at Masai School, where I
+          gained expertise in the MERN stack: MongoDB, Express, React, and
+          Node.js. I am skilled at building scalable web applications, creating
+          RESTful APIs, responsive interfaces, and secure back-end solutions.
+          With experience in OAuth, JWT authentication, and database
+          optimization, I focus on crafting innovative, user-centered
+          applications while continually expanding my technical skills.
         </p>
       </div>
       <div className={styles.about_right}>

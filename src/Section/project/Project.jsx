@@ -1,13 +1,7 @@
-import React, { lazy } from "react";
+import React from "react";
 import styles from "./Project.module.css";
 import ProjectCard from "../../Components/projectCard/ProjectCard";
 import { FaPlay, FaCode } from "react-icons/fa";
-import razorPay from "../../assets/project1.png";
-import eComm from "../../assets/project2.png";
-import weather from "../../assets/project3.png";
-import toggleHead from "../../assets/project5.png";
-import fitClub from "../../assets/project6.png";
-import topCourses from "../../assets/project4.png";
 import { projectData } from "../../data/ProjectData";
 
 const Project = () => {

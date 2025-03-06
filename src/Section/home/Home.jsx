@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./Home.module.css";
-import heroimg from "../../assets/Hero.jpg";
+import heroImg from "../../assets/Hero.jpg";
 import Image from "../image/Image";
 import Button from "../../Components/Button/Button";
 import { toast } from "react-toastify";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import resume from "../../assets/MukeshKumar.pdf";
 
 const Home = () => {
   const handleDownload = () => {
@@ -26,7 +27,7 @@ const Home = () => {
       </div>
 
       <div className={styles.hero_img}>
-        <Image src={heroimg} />
+        <Image src={heroImg} />
       </div>
       <div className={styles.main} id="home">
         <div className={styles.homeLeft}></div>
@@ -34,17 +35,14 @@ const Home = () => {
           <p>Full-Stack Web Developer</p>
           <h1>Mukesh Kumar</h1>
           <p>
-            My passion for software lies in dreaming up ideas and making them
-            come true with elegant interfaces. I care greatly about the
-            experience, architecture, and code quality of the things I build.
+            My passion for software is in conceptualizing ideas and transforming
+            them into elegant interfaces. I prioritize the user experience,
+            software architecture, and code quality of what I create.
           </p>
           <div className={styles.btn}>
-            <a
-              href="../../assets/MukeshKumar-FullStackWebDeveloper-kq9U.pdf"
-              download
-            >
+            <a href={resume} download>
               <Button handleDownload={handleDownload} className={styles.btn2}>
-                Dounload CV
+                Download CV
               </Button>
             </a>
             <a href="#contact">
