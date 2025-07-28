@@ -1,13 +1,43 @@
 import razorPay from "../assets/project1.png";
-import eComm from "../assets/project2.png";
-import weather from "../assets/project3.png";
-import toggleHead from "../assets/project5.png";
+import eComm from "../assets/e-commerce.png";
+import dentist from "../assets/dentist.png";
+import myBooks from "../assets/my-books.png";
 import fitClub from "../assets/project6.png";
 import topCourses from "../assets/project4.png";
 
 export const projectData = [
   {
     id: 1,
+    title: "My Books",
+    image: myBooks,
+    description:
+      "A MERN stack web application that allows users to register, log in, and manage their personal library. Users can browse books, mark their reading status (Want to Read, Reading, Read), and view their saved books. Features include JWT-based authentication with HTTP-only cookies, protected routes, and responsive UI. Deployed using Render (backend) and (frontend).",
+    tech: "MERN and Tailwind Css",
+    href1: `https://book-library-management-front-end.onrender.com`,
+    href2: `https://github.com/MukeshKumarCoder/Book_Library_Management_App`,
+  },
+  {
+    id: 2,
+    title: "E-commerce",
+    image: eComm,
+    description:
+      "Built a full-featured e-commerce web application using the MERN stack. The frontend consumes external product APIs and allows users to browse products, manage a cart using Redux, and perform dummy payments. Included user authentication to restrict payment access, with cart and user state persisted using localStorage. and responsive UI. Deployed using Render (backend) and (frontend).",
+    tech: "MERN and Tailwind Css",
+    href1: `https://my-e-commerce-frontend.onrender.com`,
+    href2: `https://github.com/MukeshKumarCoder/My_E-commerce/tree/main`,
+  },
+  {
+    id: 3,
+    title: "Dentist App",
+    image: dentist,
+    description:
+      "Developed a fully responsive dental clinic website with modern UI using React.js and CSS3. The project includes all core pages—Home, About, Dentist, Blog, and Contact Us—as showcased in the navigation bar. Designed with a focus on accessibility and user experience, the layout adapts seamlessly across devices. Deployed using Netlify.",
+    tech: "React.js and CSS",
+    href1: `https://dontodentistapp.netlify.app/`,
+    href2: `https://github.com/MukeshKumarCoder/donto_dentist_app`,
+  },
+  {
+    id: 4,
     title: "RazorPay Clone",
     image: razorPay,
     description:
@@ -17,38 +47,8 @@ export const projectData = [
     href2: `https://github.com/magupta1/RazorpayClone-with-Tailwind`,
   },
   {
-    id: 2,
-    title: "WEE Store",
-    image: eComm,
-    description:
-      "Developed a visually compelling and responsive E-Commerce website home page using HTML5 and CSS. Prioritized user experience for both mobile and tablet devices, ensuring seamless",
-    tech: "HTML and CSS",
-    href1: `https://wee-store-e-commerce.netlify.app/`,
-    href2: `https://github.com/magupta1/E-Commerce`,
-  },
-  {
-    id: 3,
-    title: "Weather App",
-    image: weather,
-    description:
-      "Developed a sleek Weather App using OpenWeather API, HTML5, CSS, and JavaScript. Enables users to effortlessly search and access real-time weather data by city name.",
-    tech: "HTML, css and JavaScript",
-    href1: `https://weather-app-with-search-api.netlify.app/`,
-    href2: `https://github.com/magupta1/Masai_Js_Problems/tree/main/WeatherApp2`,
-  },
-  {
-    id: 4,
-    title: "ToggleHead Project",
-    image: toggleHead,
-    description:
-      "Made a cool landing page for digital marketing called ToggleHead. Used React.js, CSS, and Swipe.js for swiping stuff. Works great on phones and tablets too. It shows off my skills in React.js.",
-    tech: "React.js, CSS, Swiper.js",
-    href1: `https://togglehead-project.netlify.app/`,
-    href2: `https://github.com/magupta1/ToggleHead-Project`,
-  },
-  {
     id: 5,
-    title: "FitClup App",
+    title: "FitClub App",
     image: fitClub,
     description:
       "Crafted a sleek landing page for Fit Club using React.js and CSS3. Emphasized clean design, responsiveness, and subtle animations/images. Showcases a blend of technical proficiency and creative design.",

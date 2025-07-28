@@ -1,5 +1,4 @@
-
-.skillsCard{
+.skillsCard {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,13 +10,8 @@
 }
 
 
-@media screen and (max-width: 1024px) {
-    
-}
-
 @media screen and (max-width: 768px) {
-  
-}
-@media screen and (max-width: 600px) {
-  
+    .skillsCard {
+        gap: 6px;
+    }
 }

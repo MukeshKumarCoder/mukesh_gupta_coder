@@ -36,7 +36,7 @@ const Contact = () => {
 
   return (
     <div
-      style={{ paddingLeft: "5.7rem", marginTop: "5rem", position: "relative" }}
+      className={styles.contactContainer}
       id="contact"
     >
       <h2>Contact</h2>

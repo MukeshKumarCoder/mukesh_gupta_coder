@@ -6,6 +6,7 @@ import express from "../assets/express-js.png";
 import node from "../assets/node.png";
 import mongo from "../assets/mongo.svg";
 import tailwind from "../assets/tailwindcss.png";
+import reduxImg from "../assets/redux.png";
 
 export const skillData = [
   {
@@ -30,21 +31,26 @@ export const skillData = [
   },
   {
     id: 5,
+    title: "Redux",
+    image: reduxImg,
+  },
+  {
+    id: 6,
     title: "Tailwind",
     image: tailwind,
   },
   {
-    id: 6,
+    id: 7,
     title: "Express.js",
     image: express,
   },
   {
-    id: 7,
+    id: 8,
     title: "Node.js",
     image: node,
   },
   {
-    id: 8,
+    id: 9,
     title: "MongoDB",
     image: mongo,
   },

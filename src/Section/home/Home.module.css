@@ -1,199 +1,158 @@
 .homeContainer {
     width: 100%;
-    height: 100vh;
-    position: relative;
+    min-height: 100vh;
+    background-color: #2a9d8f;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hero_img {
-    position: absolute;
-    top: 22%;
-    left: 21%;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-width: 25rem;
+    height: 25rem;
     border-radius: 50%;
     user-select: none;
     z-index: 50;
 }
 
- .links {
-    position: absolute;
-    top: 92%;
-    left: 5%;
-    display: flex;
-    gap: 2rem;
-    user-select: none;
-    z-index: 50;
-}
-.links > a{
-    transition: .3s ease-in-out;
-}
-.links> a > .socialLinks {
-    font-size: 2.2rem;
-    fill: #000;
+.hero_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-.links>a:hover {
-    cursor: pointer;
-    transform: scale(1.15);
-} 
-.main{
+.right {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-}
- .homeLeft {
-    width: 35%;
-    height: 100%;
-    background-color: #2a9d8f;
-    position: relative;
+    width: 50%;
+    padding: 0 3rem;
 }
 
- .homeRight {
+.right>div {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    row-gap: 0.5rem;
+    align-items: center;
+    row-gap: 1rem;
     position: relative;
-    width: 35%;
-    padding-right: 5rem;
-    margin-right: 3rem;
 }
 
-.homeRight>p {
+.right>div>p {
     font-size: 1.2rem;
     color: #eaeaea;
     opacity: 0.9;
     font-weight: 500;
 }
 
-.homeRight>h1 {
+.right>div>h1 {
     font-size: 2.7rem;
     color: #eaeaea;
 }
 
 .btn {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    gap: 3.5rem;
+    gap: 3rem;
 }
 
 .btn1 {
-    background-color: #2a9d8f;
+    background-color: #fff;
     color: #000;
 }
 
 .btn1:hover {
     background: transparent;
     color: #fff;
-    border: 3px solid #eaeaea;
+    border: 3px solid #fff;
 }
 
 .btn2 {
-    color: #2a9d8f;
+    color: #fff;
     background-color: #212121;
 }
 
 .btn2:hover {
-    background-color: #eaeaea;
+    background-color: #fff;
     color: #000;
-    border: 3px solid #eaeaea;
+    border: 3px solid #fff;
 }
 
-hr {
-    background-color: #2a9d8f;
-    border: none;
-    width: 85%;
-    height: 6px;
-    margin: 4rem auto;
-    border-radius: 5px;
-} 
-
-
-@media screen and (max-width: 1024px) {
-    .hero_img {
-        top: 25%;
-        left: 30%;
-        width: 350px;
-        height: 350px;
-    }
-    .homeRight {
-        width: 40%;
-        padding-right: 2.5rem;
-        margin-right: 2rem;
-    }
-    .links {
-        top: 95%;
-        left: 5%;
-    }
+.btn1,
+.btn2 {
+    transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
+    .homeContainer {
+        margin-top: 3rem;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+        height: auto;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .right>div {
+        width: 100%;
+    }
+
     .hero_img {
-        left: 25%;
         width: 300px;
         height: 300px;
+        margin-bottom: 2rem;
     }
-    .homeRight {
-        row-gap: 0.5rem;
-        width: 43%;
-        padding-right: 1rem;
-        margin-right: 1rem;
-    }
-    .homeRight>h1 {
-        font-size: 2.2rem;
-    }
-    .homeRight>p {
-        font-size: 1.1rem;
-    }
+
     .btn {
+
         gap: 1rem;
     }
-
 }
+
+
 @media screen and (max-width: 600px) {
-  .homeContainer{
-    flex-direction: column;
-   justify-content: center;
-    align-items: center;
-    height: 110vh;
-  }
-  .hero_img {
-    top: 18%;
-    left: 50%;
-    width: 250px;
-    height: 250px;
-}
-  .homeLeft{
-    display: none;
-  }
-  .homeRight{
-    margin-top: 22rem;
-    width: 100vw;
-    align-items: center;
-    padding: 1.5rem;
-    margin-right: 0rem;
-  }
-  .homeRight>p {
-    font-size: 1rem;
-}
-.btn{
-    margin: 1rem 0;
-}
-  .links {
-    top: 60%;
-    left: 5%;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 4rem 0 1rem;
-    margin: auto;
-    user-select: none;
-    z-index: 1111;
-}
-.links> a > .socialLinks {
-    fill: #2a9d8f;
-}
+    .homeContainer {
+        margin-top: 4rem;
+    }
 
-} 
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+    }
+
+    .hero_img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .right>div>h1 {
+        font-size: 2rem;
+    }
+
+    .right>div>p {
+        font-size: 1rem;
+    }
+}

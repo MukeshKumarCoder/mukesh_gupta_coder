@@ -16,7 +16,7 @@ const ProjectCard = ({
       <h3>{title}</h3>
       <img src={image} alt={image} />
       <p>{description}</p>
-      <p className={styles.langauge}>{tech}</p>
+      <p className={styles.language}>{tech}</p>
       <div className={styles.project_icon}>
         <a href={href1} target="_blank">
           <p>{icon1}</p>

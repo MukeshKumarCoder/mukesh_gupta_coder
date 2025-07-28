@@ -3,6 +3,7 @@ import git from "../assets/git.svg";
 import github from "../assets/GitHub.png";
 import netlify from "../assets/netlify-.png";
 import postman from "../assets/postman.png";
+import renderImg from "../assets/render.jpg";
 
 export const toolsData = [
   {
@@ -27,6 +28,11 @@ export const toolsData = [
   },
   {
     id: 5,
+    title: "Render",
+    image: renderImg,
+  },
+  {
+    id: 6,
     title: "Postman",
     image: postman,
   },

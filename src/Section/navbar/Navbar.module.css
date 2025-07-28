@@ -11,6 +11,7 @@
     position: fixed;
     top: 0;
     z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navLeft>h1 {
@@ -20,13 +21,15 @@
 
 .navRight {
     display: flex;
-    justify-content: center;
-    align-items: center;
     list-style: none;
     gap: 1.5rem;
 }
 
-.navRight>div>.navList {
+.navItem {
+    list-style: none;
+}
+
+.navList {
     text-decoration: none;
     color: aliceblue;
     position: relative;
@@ -35,7 +38,7 @@
     letter-spacing: 1px;
 }
 
-.navRight>div>.navList::after {
+.navList::after {
     content: "";
     display: block;
     width: 0;
@@ -47,89 +50,54 @@
     transition: width 0.3s;
 }
 
-.navRight>div>.navList:hover:after{
+.navList:hover::after {
     width: 100%;
 }
 
-
-
-/*
-.navRight>ul>a>li {
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    transition: all 0.3s ease-in;
-}
-
-.navRight>ul>a>li:hover {
-    color: #0a0a0a;
-}
-
-.navRight>ul>a>li:hover::after {
-    content: "";
-    width: 80%;
-    height: 2px;
-    background-color: #0a0a0a;
-    position: absolute;
-    bottom: -4px;
-    left: 0px;
-}
-
-.hamburgur {
+.hamburger {
     display: none;
 }
 
-.hamburgur button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-    font-weight: bold;
-    width: 5rem;
+.hamburger button {
     background: transparent;
     border: none;
+    font-size: 2rem;
     color: aliceblue;
-    font-weight: bold;
+    cursor: pointer;
+    z-index: 11;
 }
 
 .navListAfterClick {
     position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #080606f0;
-    margin-top: 4rem;
-    width: 80%;
+    top: 5.4rem;
+    right: 0;
+    background-color: #fff;
+    width: 50%;
     height: 100vh;
-    z-index: 1111;
-    transition: 0.5s ease-in-out;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    z-index: 11;
+    transition: all 0.3s ease-in-out;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
     display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-}
-
-.navListAfterClick>ul>a {
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-}
-
-.navListAfterClick>ul>a>li {
+    gap: 1rem;
+    padding-top: 2rem;
     list-style: none;
-    color: #2a9d8f;
-    border: 2px solid #2a9d8f;
-    padding: 0.4rem 1.5rem;
-    border-radius: 1.3rem;
-    letter-spacing: 1px;
-    margin-top: 1rem;
-    font-weight: 800;
 }
 
+.navListAfterClick .navItem {
+    margin: 1rem 2rem;
+}
 
-
-
+.navListAfterClick .navList {
+    color: #2a9d8f;
+    font-weight: 800;
+    border: 2px solid #2a9d8f;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1.3rem;
+    text-align: center;
+}
 
 @media screen and (max-width: 1024px) {
     .navBarContainer {
@@ -137,32 +105,30 @@
     }
 }
 
-
 @media screen and (max-width: 768px) {
     .navBarContainer {
-        padding: 0.6rem 2rem;
+        padding: 0.5rem 2rem;
     }
 
-    .navBarContainer>h1 {
+    .navLeft>h1 {
         font-size: 1.8rem;
     }
 }
 
-
 @media screen and (max-width: 600px) {
     .navBarContainer {
-        padding: 0.8rem 1rem;
+        padding: 0rem 1rem;
     }
 
-    .hamburgur {
+    .navLeft>h1 {
+        font-size: 1.2rem;
+    }
+
+    .hamburger {
         display: block;
     }
 
-    .navlist {
+    .navRight {
         display: none;
     }
-
-    .navBarContainer>h1 {
-        font-size: 1rem;
-    }
-} */
+}
