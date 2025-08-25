@@ -9,6 +9,6 @@ export const experienceCompany = [
     id: 2,
     companyName: "Your-Hive",
     role: "Full Stack Developer",
-    duration: "July 2024 - June 2025",
+    duration: "July 2024 - July 2025",
   },
 ];

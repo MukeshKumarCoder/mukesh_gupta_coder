@@ -4,7 +4,7 @@ import { experienceCompany } from "../../data/ExperienceCompany";
 
 const Experience = () => {
   return (
-    <div>
+    <div id="experience">
       <h2 style={{ textAlign: "center" }}>Experience</h2>
       <div className={styles.experienceContainer}>
         <table>

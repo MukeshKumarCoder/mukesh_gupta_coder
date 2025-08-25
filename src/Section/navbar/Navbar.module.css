@@ -54,24 +54,31 @@
     width: 100%;
 }
 
+
 .hamburger {
     display: none;
-}
-
-.hamburger button {
     background: transparent;
     border: none;
     font-size: 2rem;
     color: aliceblue;
     cursor: pointer;
     z-index: 11;
+    outline: none;
+}
+
+.hamburger:focus,
+.hamburger:active {
+    outline: none;
+    box-shadow: none;
 }
 
 .navListAfterClick {
     position: absolute;
-    top: 5.4rem;
+    top: 4.3rem;
     right: 0;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.658);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     width: 50%;
     height: 100vh;
     z-index: 11;

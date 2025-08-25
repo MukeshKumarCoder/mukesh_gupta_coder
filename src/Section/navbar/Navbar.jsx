@@ -6,7 +6,8 @@ const navList = [
   { id: 2, title: "About", path: "#about" },
   { id: 3, title: "Skills", path: "#skills" },
   { id: 4, title: "Project", path: "#project" },
-  { id: 5, title: "Contact", path: "#contact" },
+  { id: 5, title: "Experience", path: "#experience" },
+  { id: 6, title: "Contact", path: "#contact" },
 ];
 
 const Navbar = () => {
@@ -22,17 +23,20 @@ const Navbar = () => {
         <h1>Mukesh Kumar</h1>
       </div>
 
-      <div className={styles.hamburger}>
-        <button onClick={handleMenuToggle} aria-label="Toggle Menu">
-          ☰
-        </button>
-      </div>
+      <button
+        className={styles.hamburger}
+        onClick={handleMenuToggle}
+        aria-label="Toggle Menu"
+      >
+        ☰
+      </button>
 
       <ul className={isMenuOpen ? styles.navListAfterClick : styles.navRight}>
         {navList.map((link) => (
           <li
             key={link.id}
-            className={styles.navItem}  
+            className={styles.navItem}
+            onClick={() => setIsMenuOpen(false)}
           >
             <a href={link.path} className={styles.navList}>
               {link.title}

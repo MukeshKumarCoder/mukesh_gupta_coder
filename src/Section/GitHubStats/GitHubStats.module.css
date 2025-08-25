@@ -1,0 +1,59 @@
+.githubStats {
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.statsTitle {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.statsCards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.card {
+    max-width: 90%;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.showDelay1 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.showDelay2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+.showDelay3 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;
+}
+
+@media (min-width: 768px) {
+    .statsCards {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        max-width: 30%;
+    }
+}

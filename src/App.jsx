@@ -9,6 +9,7 @@ import Footer from "../src/Section/footer/Footer";
 import "react-toastify/dist/ReactToastify.css";
 import Tools from "./Section/tools/Tools";
 import Experience from "./Section/experience/Experience";
+import GitHubStats from "./Section/GitHubStats/GitHubStats";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Tools id="tools" />
       <Project id="project" />
       <Experience id="experience" />
+      <GitHubStats />
       <Contact id="contact" />
       <Footer id="footer" />
     </div>
