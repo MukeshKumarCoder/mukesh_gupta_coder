@@ -3,11 +3,21 @@ import eComm from "../assets/e-commerce.png";
 import dentist from "../assets/dentist.png";
 import myBooks from "../assets/my-books.png";
 import fitClub from "../assets/project6.png";
-import topCourses from "../assets/project4.png";
+import studyNotion from "../assets/project4.png";
 
 export const projectData = [
   {
     id: 1,
+    title: "StudyNotion",
+    image: studyNotion,
+    description:
+      "🎓 Student Learning Platform — A modern EdTech web application built with Vite, React.js, and Tailwind CSS, designed to offer students a seamless and engaging online learning experience. It features secure user authentication, personalized dashboards, and course management for browsing, enrolling, and accessing interactive lessons. The platform integrates Razorpay payments for smooth and secure premium course enrollment, maintains a detailed purchase history, and includes a contact support system for user feedback via email. With a fully responsive design, it ensures an optimized experience across all devices.",
+    tech: "MERN and Tailwind Css",
+    href1: `https://studynotion21.netlify.app/`,
+    href2: `https://github.com/MukeshKumarCoder/StudyNotion_Full-Stack-App`,
+  },
+  {
+    id: 2,
     title: "My Books",
     image: myBooks,
     description:
@@ -17,7 +27,7 @@ export const projectData = [
     href2: `https://github.com/MukeshKumarCoder/Book_Library_Management_App`,
   },
   {
-    id: 2,
+    id: 3,
     title: "E-commerce",
     image: eComm,
     description:
@@ -27,7 +37,7 @@ export const projectData = [
     href2: `https://github.com/MukeshKumarCoder/My_E-commerce/tree/main`,
   },
   {
-    id: 3,
+    id: 4,
     title: "Dentist App",
     image: dentist,
     description:
@@ -37,7 +47,7 @@ export const projectData = [
     href2: `https://github.com/MukeshKumarCoder/donto_dentist_app`,
   },
   {
-    id: 4,
+    id: 5,
     title: "RazorPay Clone",
     image: razorPay,
     description:
@@ -47,7 +57,7 @@ export const projectData = [
     href2: `https://github.com/magupta1/RazorpayClone-with-Tailwind`,
   },
   {
-    id: 5,
+    id: 6,
     title: "FitClub App",
     image: fitClub,
     description:
@@ -55,15 +65,5 @@ export const projectData = [
     tech: "React.js, css and animation",
     href1: `https://fit-club-react-project.netlify.app/`,
     href2: `https://github.com/magupta1/FitClub`,
-  },
-  {
-    id: 6,
-    title: "TopCourses App",
-    image: topCourses,
-    description:
-      "Developed a React.js project Top Courses showcasing a collection of courses. Implemented category-based filtering for easy navigation. Designed with CSS to provide a user-friendly and responsive experience.",
-    tech: "React.js and CSS",
-    href1: `https://topcourseswithfilter.netlify.app/`,
-    href2: `https://github.com/magupta1/top-Courses`,
   },
 ];

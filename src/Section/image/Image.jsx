@@ -3,7 +3,7 @@ import styles from "./Image.module.css"
 
 const Image = (props) => {
   return (
-    <img className={styles.img} src={props.src}/> 
+    <img className={styles.img} src={props.src} alt="Hero"/> 
   )
 }
 

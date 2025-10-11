@@ -4,7 +4,7 @@ import heroImg from "../../assets/Hero.jpg";
 import Image from "../image/Image";
 import Button from "../../Components/Button/Button";
 import { toast } from "react-toastify";
-import resume from "../../assets/MukeshKumar.pdf";
+import resume from "../../assets/Mukesh-Kumar CV.pdf";
 
 const Home = () => {
   const handleDownload = () => {

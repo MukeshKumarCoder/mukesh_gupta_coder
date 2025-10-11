@@ -27,6 +27,10 @@
     line-height: 1.8rem;
 }
 
+.about_left>p>strong{
+    color: #2a9d8f;
+}
+
 .about_right>img {
     width: 23.75rem;
     user-select: none;

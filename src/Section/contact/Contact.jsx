@@ -87,19 +87,19 @@ const Contact = () => {
         <div className={styles.contact_right}>
           <a href="mailto:mg328790@gmail.com">
             <div className={styles.contactIcon}>
-              <img src={mailIcon} />
+              <img src={mailIcon} alt="mail" />
             </div>
             <p>mg328790@gmail.com</p>
           </a>
           <a href="tel:+91 8292196144">
             <div className={styles.contactIcon}>
-              <img src={call} />
+              <img src={call} alt="call" />
             </div>
             <p>+91 8292196144</p>
           </a>
           <a>
             <div className={styles.contactIcon}>
-              <img src={location} />
+              <img src={location} alt="location" />
             </div>
             <p>
               Siwan, Bihar, India
@@ -119,7 +119,7 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <img className={styles.contactImg} src={sideImg} />
+        <img className={styles.contactImg} src={sideImg} alt="image" />
       </div>
     </div>
   );

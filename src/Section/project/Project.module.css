@@ -11,7 +11,7 @@
     .projects {
         grid-template-columns: repeat(2, 1fr);
         padding: 1rem;
-     
+
     }
 }
 
@@ -19,7 +19,7 @@
     .projects {
         grid-template-columns: repeat(2, 1fr);
         padding: 1rem;
-  
+
     }
 }
 
@@ -27,6 +27,6 @@
     .projects {
         grid-template-columns: repeat(1, 1fr);
         padding: 1rem;
-      
+
     }
 }

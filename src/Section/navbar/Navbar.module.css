@@ -4,14 +4,13 @@
     width: 100%;
     background-color: #16b5a3;
     padding: 0.8rem 7rem;
-    color: aliceblue;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navLeft>h1 {
@@ -31,7 +30,7 @@
 
 .navList {
     text-decoration: none;
-    color: aliceblue;
+    color: #fff;
     position: relative;
     font-size: 1rem;
     font-weight: bold;
@@ -43,7 +42,7 @@
     display: block;
     width: 0;
     height: 1.5px;
-    background: aliceblue;
+    background: #fff;
     position: absolute;
     bottom: -2px;
     left: 0;
@@ -60,7 +59,7 @@
     background: transparent;
     border: none;
     font-size: 2rem;
-    color: aliceblue;
+    color: #fff;
     cursor: pointer;
     z-index: 11;
     outline: none;
