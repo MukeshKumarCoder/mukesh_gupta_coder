@@ -1,9 +1,9 @@
-import razorPay from "../assets/project1.png";
-import eComm from "../assets/e-commerce.png";
+import razorPay from "../assets/project1.jpg";
+import eComm from "../assets/e-commerce.jpg";
 import dentist from "../assets/dentist.png";
 import myBooks from "../assets/my-books.png";
-import fitClub from "../assets/project6.png";
-import studyNotion from "../assets/project4.png";
+import fitClub from "../assets/project6.jpg";
+import studyNotion from "../assets/project4.jpg";
 
 export const projectData = [
   {

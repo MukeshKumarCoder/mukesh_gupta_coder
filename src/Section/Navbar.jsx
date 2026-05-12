@@ -92,6 +92,7 @@ const Navbar = () => {
               <li key={link.id}>
                 <a
                   href={link.path}
+                  aria-label={`${link.title}`}
                   className="text-sm font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 dark:hover:text-white hover:text-indigo-600 transition"
                 >
                   {link.title}
@@ -99,14 +100,19 @@ const Navbar = () => {
               </li>
             ))}
 
-            <a
-              href="#contact"
-              className="px-6 py-2.5 bg-gradient-to-r from-indigo-500 to-indigo-700 text-white rounded-xl font-bold hover:-translate-y-1 hover:shadow-lg transition-all"
-            >
-              Hire Me
-            </a>
+            <li>
+              <a
+                href="#contact"
+                aria-label="Contact"
+                className="px-6 py-2.5 bg-gradient-to-r from-indigo-500 to-indigo-700 text-white rounded-xl font-bold hover:-translate-y-1 hover:shadow-lg transition-all"
+              >
+                Hire Me
+              </a>
+            </li>
 
-            <ThemeToggle />
+            <li>
+              <ThemeToggle />
+            </li>
           </ul>
 
           <div className="flex items-center gap-3 lg:hidden">
@@ -153,6 +159,7 @@ const Navbar = () => {
             <a
               key={link.id}
               href={link.path}
+              aria-label={`${link.title}`}
               onClick={() => setIsMenuOpen(false)}
               className="text-3xl font-black text-slate-900 dark:text-white hover:text-indigo-600 transition-all duration-300 hover:scale-110"
             >
@@ -162,6 +169,7 @@ const Navbar = () => {
 
           <a
             href="#contact"
+            aria-label="Contact"
             onClick={() => setIsMenuOpen(false)}
             className="mt-6 px-10 py-4 bg-gradient-to-r from-indigo-600 to-cyan-500 text-white rounded-2xl font-bold shadow-lg hover:scale-105 transition-all"
           >

@@ -17,16 +17,16 @@ const Tools = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="mb-8 text-center lg:text-left">
-          <h3 className="text-cyan-600 font-bold text-xs sm:text-sm tracking-[0.25em] uppercase mb-3">
+          <h2 className="text-cyan-600 font-bold text-xs sm:text-sm tracking-[0.25em] uppercase mb-3">
             Workflow
-          </h3>
+          </h2>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
             Software{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
               & Tools
             </span>
-          </h2>
+          </h3>
         </div>
 
         {/* Tools Grid */}
@@ -49,6 +49,8 @@ const Tools = () => {
                 <img
                   src={tool.image}
                   alt={tool.title}
+                  loading="lazy"
+                  decoding="async"
                   className="w-5 h-5 sm:w-6 sm:h-6 object-contain grayscale group-hover:grayscale-0 transition"
                 />
               </div>

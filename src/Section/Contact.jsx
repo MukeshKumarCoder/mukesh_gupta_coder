@@ -41,16 +41,16 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Heading */}
         <div className="text-center mb-8">
-          <h3 className="text-indigo-600 font-bold text-xs sm:text-sm tracking-widest uppercase mb-3">
+          <h2 className="text-indigo-600 font-bold text-xs sm:text-sm tracking-widest uppercase mb-3">
             Connect
-          </h3>
+          </h2>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 dark:text-white leading-tight">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 dark:text-white leading-tight">
             Get In{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500">
               Touch
             </span>
-          </h2>
+          </h3>
         </div>
 
         {/* Layout */}
@@ -66,6 +66,7 @@ const Contact = () => {
                 {/* Email */}
                 <a
                   href="mailto:mg328790@gmail.com"
+                  aria-label="Email"
                   className="flex items-start sm:items-center gap-4 group"
                 >
                   <div className="p-3 sm:p-4 bg-indigo-50 text-indigo-600 rounded-xl sm:rounded-2xl group-hover:bg-indigo-600 group-hover:text-white transition-all duration-600">
@@ -76,10 +77,10 @@ const Contact = () => {
                   </div>
 
                   <div className="break-all">
-                    <p className="text-[10px] text-slate-400 uppercase font-black tracking-widest">
+                    <p className="text-[10px] text-slate-600 dark:text-slate-300 uppercase font-black tracking-widest">
                       Email Me
                     </p>
-                    <p className="text-sm sm:text-base text-slate-700 font-semibold group-hover:text-indigo-600 transition-colors">
+                    <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 font-semibold group-hover:text-indigo-600 transition-colors">
                       mg328790@gmail.com
                     </p>
                   </div>
@@ -88,6 +89,7 @@ const Contact = () => {
                 {/* Phone */}
                 <a
                   href="tel:+918292196144"
+                  aria-label="Call me"
                   className="flex items-start sm:items-center gap-4 group"
                 >
                   <div className="p-3 sm:p-4 bg-cyan-50 text-cyan-600 rounded-xl sm:rounded-2xl group-hover:bg-cyan-600 group-hover:text-white transition-all duration-600">
@@ -98,10 +100,10 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <p className="text-[10px] text-slate-400 uppercase font-black tracking-widest">
+                    <p className="text-[10px] text-slate-600 dark:text-slate-300 uppercase font-black tracking-widest">
                       Call Me
                     </p>
-                    <p className="text-sm sm:text-base text-slate-700 font-semibold group-hover:text-cyan-600 transition-colors">
+                    <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 font-semibold group-hover:text-cyan-600 transition-colors">
                       +91 8292196144
                     </p>
                   </div>
@@ -117,10 +119,10 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <p className="text-[10px] text-slate-400 uppercase font-black tracking-widest">
+                    <p className="text-[10px] text-slate-600 dark:text-slate-300 uppercase font-black tracking-widest">
                       Location
                     </p>
-                    <p className="text-sm sm:text-base text-slate-700 font-semibold">
+                    <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 font-semibold">
                       Siwan, Bihar, India
                     </p>
                   </div>
@@ -138,6 +140,7 @@ const Contact = () => {
                     href="https://github.com/MukeshKumarCoder"
                     target="_blank"
                     rel="noreferrer"
+                    aria-label="Open GitHub"
                     className="group p-3 sm:p-4 bg-slate-50 rounded-xl sm:rounded-2xl text-slate-600 hover:bg-slate-900 hover:text-white transition-all duration-600"
                   >
                     <FaGithub
@@ -150,6 +153,7 @@ const Contact = () => {
                     href="https://www.linkedin.com/in/mukesh-gupta-49108624a/"
                     target="_blank"
                     rel="noreferrer"
+                    aria-label="Open LinkedIn"
                     className="group p-3 sm:p-4 bg-slate-50 rounded-xl sm:rounded-2xl text-slate-600 hover:bg-blue-600 hover:text-white transition-all duration-600"
                   >
                     <FaLinkedin

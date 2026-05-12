@@ -34,8 +34,11 @@ const Footer = () => {
         >
           {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
             <li key={item}>
-              <a href={`#${item.toLowerCase()}`} className="relative group">
-                <span className="group-hover:text-indigo-600 transition">
+              <a href={`#${item.toLowerCase()}`} className="relative group"
+              aria-label={`${item}`}
+              >
+              
+                <span className="group-hover:text-indigo-600 text-slate-600 dark:text-slate-300 transition">
                   {item}
                 </span>
 
@@ -56,6 +59,7 @@ const Footer = () => {
             href="https://github.com/MukeshKumarCoder"
             target="_blank"
             rel="noreferrer"
+            aria-label="Open GitHub"
             className="p-3 bg-slate-50 rounded-xl hover:bg-slate-900 hover:text-white transition-all duration-300hover:scale-110"
           >
             <FaGithub size={18} />
@@ -65,6 +69,7 @@ const Footer = () => {
             href="https://linkedin.com"
             target="_blank"
             rel="noreferrer"
+            aria-label="Open LinkedIn"
             className="p-3 bg-slate-50 rounded-xl hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-110"
           >
             <FaLinkedin size={18} />
@@ -85,7 +90,7 @@ const Footer = () => {
         </motion.div>
 
         {/* COPYRIGHT */}
-        <p className="mt-6 text-xs tracking-[0.3em] uppercase font-black text-slate-400">
+        <p className="mt-6 text-xs tracking-[0.3em] uppercase font-black text-slate-600 dark:text-slate-200">
           © {currentYear} • Designed for High Performance
         </p>
       </div>

@@ -28,16 +28,16 @@ const Project = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h4 className="text-indigo-600 font-bold text-xs sm:text-sm tracking-[0.3em] uppercase mb-3">
+          <h2 className="text-indigo-600 font-bold text-xs sm:text-sm tracking-[0.3em] uppercase mb-3">
             Portfolio
-          </h4>
+          </h2>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white mb-2">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white mb-2">
             Featured{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500">
               Work
             </span>
-          </h2>
+          </h3>
 
           <p className="text-slate-500 dark:text-slate-300 max-w-2xl mx-auto text-base sm:text-lg">
             My recent projects built with modern technologies.

@@ -48,6 +48,8 @@ const About = () => {
 
               <img
                 src={aboutImg}
+                loading="lazy"
+                decoding="async"
                 alt="Developer Illustration"
                 className="relative z-10 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg drop-shadow-2xl"
               />
@@ -108,7 +110,7 @@ const About = () => {
               shadow-sm drop-shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all"
               >
                 <p className="text-3xl font-black text-indigo-600">2+</p>
-                <p className="text-sm text-slate-500 dark:text-slate-400 uppercase">
+                <p className="text-sm text-slate-600 dark:text-slate-300 uppercase">
                   Years Experience
                 </p>
               </div>
@@ -118,7 +120,7 @@ const About = () => {
               shadow-sm drop-shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all"
               >
                 <p className="text-3xl font-black text-fuchsia-600">10+</p>
-                <p className="text-sm text-slate-500 dark:text-slate-400 uppercase">
+                <p className="text-sm text-slate-600 dark:text-slate-300 uppercase">
                   Projects Built
                 </p>
               </div>

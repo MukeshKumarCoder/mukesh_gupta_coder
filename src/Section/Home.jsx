@@ -1,7 +1,7 @@
 import React from "react";
 import { toast } from "react-toastify";
 import { motion } from "framer-motion";
-import heroImg from "../assets/Hero.png";
+import heroImg from "../assets/Hero.jpg";
 import resume from "../assets/Mukesh-Kumar-Resume.pdf";
 import { TypeAnimation } from "react-type-animation";
 import SwingDiv from "../Components/SwingDiv";
@@ -65,6 +65,8 @@ const Home = () => {
             <div className="relative sm:w-72 sm:h-80 md:w-96 md:h-[28rem] rounded-[2rem] overflow-hidden border-4 sm:border-8 border-white dark:border-slate-800 shadow-2xl shadow-indigo-200 dark:shadow-indigo-900/40">
               <img
                 src={heroImg}
+                loading="lazy"
+                decoding="async"
                 alt="Mukesh Kumar"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -132,7 +134,7 @@ const Home = () => {
               />
             </span>
 
-            <p className="mt-3 text-slate-500 dark:text-slate-400 text-sm sm:text-base">
+            <p className="mt-3 text-slate-500 dark:text-slate-300 text-sm sm:text-base">
               I build scalable applications with modern technologies and focus
               on performance, clean architecture, and user experience.
             </p>
@@ -147,6 +149,7 @@ const Home = () => {
               href={resume}
               download
               onClick={handleDownload}
+              aria-label="Download Resume"
               className="group w-full sm:w-auto px-6 sm:px-10 py-3 
               bg-gradient-to-r from-indigo-500 to-indigo-700 
               text-white font-bold rounded-xl 
@@ -161,6 +164,7 @@ const Home = () => {
 
             <a
               href="#contact"
+              aria-label="Contact"
               className="w-full sm:w-auto px-6 sm:px-10 py-3 
               bg-white dark:bg-slate-800 
               border border-slate-200 dark:border-slate-700 
@@ -179,14 +183,14 @@ const Home = () => {
           >
             <div>
               <span className="text-2xl sm:text-3xl font-black">2+</span>
-              <p className="text-xs sm:text-sm font-bold text-slate-400 uppercase">
+              <p className="text-xs sm:text-sm font-bold text-slate-600 dark:text-slate-300 uppercase">
                 Years Exp
               </p>
             </div>
 
             <div>
               <span className="text-2xl sm:text-3xl font-black">10+</span>
-              <p className="text-xs sm:text-sm font-bold text-slate-400 uppercase">
+              <p className="text-xs sm:text-sm font-bold text-slate-600 dark:text-slate-300 uppercase">
                 Projects
               </p>
             </div>
@@ -195,7 +199,7 @@ const Home = () => {
               <span className="text-2xl sm:text-3xl font-black text-indigo-600 dark:text-indigo-400">
                 MERN
               </span>
-              <p className="text-xs sm:text-sm font-bold text-slate-400 uppercase">
+              <p className="text-xs sm:text-sm font-bold text-slate-600 dark:text-slate-300 uppercase">
                 Specialist
               </p>
             </div>

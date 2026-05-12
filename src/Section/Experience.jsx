@@ -21,16 +21,16 @@ const Experience = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-8"
         >
-          <h3 className="text-indigo-600 font-bold text-xs sm:text-sm tracking-widest uppercase mb-3">
+          <h2 className="text-indigo-600 font-bold text-xs sm:text-sm tracking-widest uppercase mb-3">
             My Journey
-          </h3>
+          </h2>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
             Professional{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500">
               Experience
             </span>
-          </h2>
+          </h3>
         </motion.div>
 
         {/* Timeline */}
@@ -78,7 +78,7 @@ const Experience = () => {
                         {exp.role}
                       </p>
 
-                      <div className="flex items-center gap-2 text-slate-400 text-xs sm:text-sm font-medium">
+                      <div className="flex items-center gap-2 text-slate-600 dark:text-slate-300 text-xs sm:text-sm font-medium">
                         <FaCalendarAlt size={12} />
                         <span>{exp.duration}</span>
                       </div>

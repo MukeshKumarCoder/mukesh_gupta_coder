@@ -37,16 +37,16 @@ const GitHubStats = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-8">
-          <h3 className="text-indigo-600 font-bold text-xs tracking-[0.3em] uppercase mb-3">
+          <h2 className="text-indigo-600 font-bold text-xs tracking-[0.3em] uppercase mb-3">
             Contributions
-          </h3>
+          </h2>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 dark:text-white">
             Coding{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500">
               Activity
             </span>
-          </h2>
+          </h3>
         </div>
 
         {/* Grid */}
@@ -62,6 +62,10 @@ const GitHubStats = () => {
             >
               <div className="bg-white/80 backdrop-blur-xl rounded-3xl p-3 shadow-xl">
                 <img
+                  loading="lazy"
+                  decoding="async"
+                  width={100}
+                  height={100}
                   src={`https://github-readme-stats-sigma-five.vercel.app/api?username=${username}&show_icons=true${commonParams}`}
                   alt="GitHub stats"
                   className="w-full rounded-2xl"
@@ -78,6 +82,10 @@ const GitHubStats = () => {
             >
               <div className="bg-white/80 backdrop-blur-xl rounded-3xl p-3 shadow-2xl overflow-x-auto">
                 <img
+                  loading="lazy"
+                  decoding="async"
+                  width={100}
+                  height={100}
                   src={`https://github-readme-activity-graph.vercel.app/graph?username=${username}&theme=github&hide_border=true&color=4f46e5&bg_color=ffffff`}
                   alt="Contribution Graph"
                   className="min-w-175 w-full"
@@ -98,6 +106,10 @@ const GitHubStats = () => {
             >
               <div className="bg-white/80 backdrop-blur-xl rounded-3xl p-3 shadow-xl">
                 <img
+                  loading="lazy"
+                  decoding="async"
+                  width={100}
+                  height={100}
                   src={`https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=${username}&layout=compact&hide_border=true&title_color=4f46e5&icon_color=6366f1&text_color=475569&bg_color=ffffff`}
                   alt="Top Languages"
                   className="w-full rounded-2xl"
@@ -115,6 +127,10 @@ const GitHubStats = () => {
             >
               <div className="bg-white/80 backdrop-blur-xl rounded-3xl p-3 shadow-xl">
                 <img
+                  loading="lazy"
+                  decoding="async"
+                  width={100}
+                  height={100}
                   src={`https://streak-stats.demolab.com?user=${username}${commonParams}`}
                   alt="GitHub Streak"
                   className="w-full rounded-2xl"

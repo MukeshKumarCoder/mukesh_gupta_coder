@@ -44,6 +44,8 @@ export default function SwingDiv() {
             <img
               src={skillData[index].image}
               alt={skillData[index].title}
+              loading="lazy"
+              decoding="async"
               className="w-16 h-16 rounded-full object-cover"
             />
           </div>

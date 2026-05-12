@@ -50,16 +50,16 @@ const Skills = () => {
           transition={{ duration: 0.6 }}
           className="text-center lg:text-left"
         >
-          <h3 className="text-indigo-600 font-bold text-xs sm:text-sm tracking-[0.25em] uppercase">
+          <h2 className="text-indigo-600 font-bold text-xs sm:text-sm tracking-[0.25em] uppercase">
             Technical Stack
-          </h3>
+          </h2>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 dark:text-white mt-2">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 dark:text-white mt-2">
             My{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500">
               Digital Toolbox
             </span>
-          </h2>
+          </h3>
         </motion.div>
 
         {/* Skills Grid */}
@@ -87,6 +87,8 @@ const Skills = () => {
                 <img
                   src={skill.image}
                   alt={skill.title}
+                  loading="lazy"
+                  decoding="async"
                   className="w-8 h-8 sm:w-10 sm:h-10 object-contain transition-transform duration-300 group-hover:scale-110"
                 />
               </div>

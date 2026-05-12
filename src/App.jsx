@@ -5,14 +5,14 @@ import Skills from "../src/Section/Skills";
 import Project from "../src/Section/Project";
 import Contact from "../src/Section/Contact";
 import Footer from "../src/Section/Footer";
-import "react-toastify/dist/ReactToastify.css";
-import Tools from "./Section/Tools";
 import Experience from "./Section/Experience";
 import GitHubStats from "./Section/GitHubStats";
+import Tools from "./Section/Tools";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
-    <div className="appContainer">
+    <main className="appContainer">
       <Navbar />
       <Home id="home" />
       <About id="about" />
@@ -23,7 +23,7 @@ function App() {
       <GitHubStats />
       <Contact id="contact" />
       <Footer id="footer" />
-    </div>
+    </main>
   );
 }
 

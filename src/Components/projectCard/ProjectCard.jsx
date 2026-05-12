@@ -28,6 +28,8 @@ const ProjectCard = ({ title, image, description, tech, href1, href2 }) => {
           <img
             src={image}
             alt={title}
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
           />
 
@@ -38,6 +40,7 @@ const ProjectCard = ({ title, image, description, tech, href1, href2 }) => {
                 href={href1}
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Open live project"
                 className="p-3 bg-white text-indigo-600 rounded-xl hover:scale-110 transition"
               >
                 <FaExternalLinkAlt />
@@ -47,6 +50,7 @@ const ProjectCard = ({ title, image, description, tech, href1, href2 }) => {
                 href={href2}
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Open GitHub Repository"
                 className="p-3 bg-white text-slate-900 rounded-xl hover:scale-110 transition"
               >
                 <FaGithub />
@@ -65,7 +69,7 @@ const ProjectCard = ({ title, image, description, tech, href1, href2 }) => {
             {title}
           </h3>
 
-          <p className="text-slate-500 dark:text-slate-400 text-sm sm:text-base mb-5 line-clamp-3">
+          <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base mb-5 line-clamp-3">
             {description}
           </p>
 
@@ -75,6 +79,7 @@ const ProjectCard = ({ title, image, description, tech, href1, href2 }) => {
               href={href1}
               target="_blank"
               rel="noreferrer"
+              aria-label="Open live project"
               className="flex-1 py-2 text-center bg-indigo-600 text-white rounded-lg text-sm font-semibold"
             >
               Live
@@ -84,6 +89,7 @@ const ProjectCard = ({ title, image, description, tech, href1, href2 }) => {
               href={href2}
               target="_blank"
               rel="noreferrer"
+              aria-label="Open GitHub Repository"
               className="flex-1 py-2 text-center bg-slate-900 text-white rounded-lg text-sm font-semibold"
             >
               Code
